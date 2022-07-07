@@ -1,0 +1,15 @@
+Steps for Dimentional Modeling:
+
+Business value: Salaries in the states
+Grain: Monthly salary offers
+---------------------------------------
+Dimensions:
+1)Location (Country, State, City)
+2)Job (Job_type, inferred job title, category)
+3)Date (created (Month/Day/Year))
+---------------------------------------
+Fact_Pay_range:
+Pay_range
+FK_1_Location
+FK_2_Job
+FK_3_Date
