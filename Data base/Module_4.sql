@@ -22,7 +22,9 @@
 --             SELECT * FROM CTE
 --             WHERE duplicateCount > 1
 --             ;
-            
+
+
+--      WITH CTE(id, job_id, country_id, state_id, city_id, duplicateCount)    
 -- 	AS (SELECT id, job_id, country_id, state_id, city_id,
 -- 				(ROW_NUMBER() OVER(PARTITION BY job_id, country_id, state_id, city_id))
 -- 				 AS duplicateCount
